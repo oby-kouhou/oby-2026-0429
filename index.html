@@ -11,14 +11,14 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect" />
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700;900&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
 <style>
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
     vertical-align: middle;
   }
-  body { font-family: 'Noto Serif JP', serif; }
+  body { font-family: 'Noto Sans JP', sans-serif; }
   .font-cormorant { font-family: 'Cormorant Garamond', serif; }
   details > summary { list-style: none; }
   details > summary::-webkit-details-marker { display: none; }
@@ -70,9 +70,9 @@
           full: "0.75rem"
         },
         fontFamily: {
-          "headline": ["Noto Serif JP"],
-          "body": ["Noto Serif JP"],
-          "label": ["Noto Serif JP"]
+          "headline": ["Noto Sans JP"],
+          "body": ["Noto Sans JP"],
+          "label": ["Noto Sans JP"]
         }
       }
     }
@@ -100,44 +100,29 @@
 <main class="pt-20">
 
 <!-- STEP 1: Hero -->
-<section class="relative min-h-[88vh] flex items-center overflow-hidden py-12 md:py-0">
+<section class="relative flex items-center overflow-hidden py-10 md:py-16">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-10 md:gap-14 items-center">
     <!-- Poster -->
-    <div class="md:col-span-5 relative order-2 md:order-1">
+    <div class="md:col-span-5 relative">
       <div class="aspect-[1993/2341] rounded-lg overflow-hidden shadow-2xl relative">
         <img src="./images/poster-main.jpg" alt="2026年度学校説明会ポスター — その好奇心は、やがて誰かのために。" class="w-full h-full object-cover" />
       </div>
       <div class="absolute -bottom-6 -right-6 w-40 h-40 border border-secondary/30 hidden md:block -z-10"></div>
     </div>
     <!-- Text block -->
-    <div class="md:col-span-7 space-y-8 order-1 md:order-2">
-      <div class="space-y-3">
-        <p class="text-secondary font-cormorant tracking-[0.2em] text-xs md:text-sm uppercase">2026 School Information Session</p>
-        <p class="text-on-surface/80 text-base md:text-lg font-medium tracking-tight">長く、迷ってこられたのだと思います。</p>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-primary leading-[1.25] tracking-tight">
-          その好奇心は、<br />やがて誰かのために。
-        </h1>
-      </div>
+    <div class="md:col-span-7 space-y-7">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-primary leading-[1.25] tracking-tight">
+        その好奇心は、<br />やがて誰かのために。
+      </h1>
+      <p class="text-on-surface/80 leading-[2.0] max-w-xl text-[15px] md:text-base">
+        毎日、胸をふくらませて登校する1年生が、<br class="hidden md:block" />
+        やがて、誰かのために惜しみなく力を注げる女性へ。<br />
+        そんな12年を、私たちは大切に育てています。
+      </p>
       <p class="text-on-surface/75 leading-relaxed max-w-xl">
-        小学校を選ぶのではなく、12年を選ぶ。<br />
+        ですから、小学校を選ぶのではなく、12年を選ぶ。<br />
         その入口を、4月29日にご覧ください。
       </p>
-      <div class="border-y border-hairline py-5 space-y-1">
-        <p class="text-secondary font-cormorant tracking-widest text-xs">APRIL 29, 2026 (WED)</p>
-        <p class="text-primary font-bold text-lg">2026年4月29日（水・祝）10:00 〜 11:00</p>
-        <p class="text-on-surface/70 text-sm">学校法人 聖心女子学院　小林聖心女子学院小学校</p>
-      </div>
-      <div>
-        <a href="https://mirai-compass.net/usr/obyshjge/event/evtIndex.jsf" target="_blank" rel="noopener"
-           class="inline-flex items-center px-10 py-5 bg-primary text-on-primary font-bold hover:bg-primary-container transition-all group rounded-lg">
-          説明会に申し込む
-          <span class="material-symbols-outlined ml-3 group-hover:translate-x-2 transition-transform">arrow_forward</span>
-        </a>
-        <div class="mt-3 text-xs text-on-surface/55 space-y-0.5">
-          <p>※申込締切：2026年4月28日（火）23:59</p>
-          <p>※お申込は外部の申込システム（ミライコンパス）に移動します</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -150,15 +135,15 @@
       <h2 class="text-2xl md:text-4xl font-bold text-primary tracking-tight leading-[1.5]">こんな夜を、<br class="md:hidden" />過ごしてきませんでしたか。</h2>
     </div>
     <div class="space-y-6 text-on-surface/85 leading-[2.0] text-[15px] md:text-base">
-      <p>寝かしつけを終えて、ようやく一人になった時間。</p>
-      <p>スマホを手に取って、気がつけば検索窓に<br />同じ学校名を入れている自分に気づく。</p>
+      <p>寝かしつけを終えた、22時過ぎのリビング。<br />ようやく一人になれた時間。</p>
+      <p>気がつけば、検索窓に<br />同じ学校名を入れている自分に気づく。</p>
       <blockquote class="border-l-2 border-secondary/60 pl-5 space-y-2 text-on-surface/75 italic">
-        <p>——公立って、実際どうなんだろう</p>
-        <p>——この子の性格に、本当に合う学校はどこだろう</p>
-        <p>——ここまで来て、"普通に"進んでいいのかな</p>
+        <p>公立って、実際どうなんだろう</p>
+        <p>この子の性格に、本当に合う学校はどこだろう</p>
+        <p>ここまで来て、"普通に"進んでいいのかな</p>
       </blockquote>
-      <p>資料を読めば読むほど、わからなくなる。<br />人に聞けば聞くほど、答えが遠ざかる。</p>
-      <p>子どもは、気づかないうちに、大きくなっていく。<br />——"決めなきゃいけない"と、心だけが急いていく。</p>
+      <p>資料を読むほどに、わからなくなる。<br />人に聞くほどに、答えが遠ざかる。</p>
+      <p>子どもは、気づかないうちに、大きくなっていく。<br />"決めなきゃいけない"と、心だけが急いていく。</p>
       <p>それでも答えが出ないのは、<br />あなたがいい加減だからではありません。</p>
       <p class="text-lg md:text-xl font-bold text-primary pt-2">お子さまの12年を、本気で選ぼうとされているからです。</p>
     </div>
@@ -233,10 +218,10 @@
       </div>
     </div>
     <div class="max-w-2xl mx-auto mt-12 space-y-5 text-on-primary/85 leading-[2.0] text-[15px]">
-      <p>どれも、本気で考えてこられたからこそ浮かぶ"ためらい"です。<br />——責められるべきことは、ひとつもありません。</p>
+      <p>どれも、本気で考えてこられたからこそ浮かぶ"ためらい"です。<br />責められるべきことは、ひとつもありません。</p>
       <p>だからこそ、</p>
       <p class="text-lg md:text-xl font-bold text-on-primary">まずは一度、"問える場所"にいらしてみませんか。</p>
-      <p>パンフレットでは伝わらないこと。<br />ネットには載っていないこと。<br />——そして、あなたの"ためらい"への、<br />私たち教員からの、率直なお答え。</p>
+      <p>パンフレットでは伝わらないこと。<br />ネットには載っていないこと。<br />そして、あなたの"ためらい"への、<br />私たち教員からの、率直なお答え。</p>
       <p>それを、60分という時間の中で、<br />できるだけ誠実にお伝えします。</p>
     </div>
   </div>
@@ -250,28 +235,23 @@
         <p class="font-cormorant italic text-secondary tracking-widest text-xs md:text-sm">A Quiet Fear</p>
         <h2 class="text-xl md:text-3xl font-bold text-primary leading-[1.5]">答えを、先送りし続けること。</h2>
       </div>
-      <p class="text-on-surface/80 leading-[2.0] text-[15px] md:text-base">ひとつだけ、そっと置かせてください。</p>
-      <details class="group mt-6 md:open" open>
-        <summary class="md:hidden flex justify-between items-center cursor-pointer text-secondary font-bold border-t border-outline-variant/30 pt-5 mt-5">
-          <span>続きを読む</span>
-          <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-        </summary>
-        <div class="pt-5 md:pt-3 text-on-surface/80 leading-[2.0] space-y-5 text-[15px] md:text-base">
-          <p>お子さまは、今も、きょうも、<br />気づかないまま、すくすく育っていきます。<br />——親が迷っているかどうか、関係なく。</p>
-          <p>ですから、本当に怖いのは、<br />「誤った選択をすること」ではないのかもしれません。</p>
-          <p class="font-bold text-primary">それよりも——</p>
-          <p>10年後のある日。<br />思春期の娘が、静かに揺れていて、<br />それを見守りながら、</p>
-          <p class="font-bold text-primary">「あの時、あの学校も、見に行くだけでも行っておけばよかったな」</p>
-          <p>と、あなたの心に小さな問いが残ること。</p>
-          <p>あるいは、さらに先の年齢で。<br />娘が自分の軸を持てずに周りと比べ続け、<br />何かあるたびに折れてしまう姿を見ながら、</p>
-          <p class="font-bold text-primary">「この子の"よりどころ"を、私はちゃんと考えてあげられていただろうか」</p>
-          <p>と、ふと振り返ること。</p>
-          <p>これらは、どちらも仮定の話です。<br />もしかしたら、娘さんは、どの道を歩んでも幸せに育つかもしれません。</p>
-          <p class="text-[15px] md:text-base font-bold text-primary pt-2 leading-[2.0]">
-            ただ、迷いを抱えたまま進むよりも、<br />一度、扉の中を見てから決めるほうが、<br />ご自身の納得は、きっと深くなります。
-          </p>
-        </div>
-      </details>
+      <div class="mt-6 text-on-surface/80 leading-[2.0] space-y-5 text-[15px] md:text-base">
+        <p>ひとつだけ、お話しさせてください。</p>
+        <p>お子さまは、今も、きょうも、<br />気づかないまま、すくすく育っていきます。<br />親が迷っているかどうか、関係なく。</p>
+        <p>ですから、本当に怖いのは、<br />「誤った選択をすること」ではないのかもしれません。</p>
+        <p class="font-bold text-primary">それよりも——</p>
+        <p>10年後のある日。<br />思春期の娘が、静かに揺れていて、<br />それを見守りながら、</p>
+        <p class="font-bold text-primary">「あの時、あの学校も、見に行くだけでも行っておけばよかったな」</p>
+        <p>と、あなたの心に小さな問いが残ること。</p>
+        <p>あるいは、さらに先の年齢で。<br />娘が自分の軸を持てずに周りと比べ続け、<br />何かあるたびに折れてしまう姿を見ながら、</p>
+        <p class="font-bold text-primary">「この子の"よりどころ"を、私はちゃんと考えてあげられていただろうか」</p>
+        <p>と、ふと振り返ること。</p>
+        <p>これらは、どちらも仮定の話です。<br />もしかしたら、娘さんは、どの道を歩んでも幸せに育つかもしれません。</p>
+        <p>あるいは、10年後のある日。<br />思春期の娘さんが、自分の言葉で何かを語っているのを見ながら、<br />「ここでよかった」と、静かに思う日が来るかもしれません。</p>
+        <p class="text-[15px] md:text-base font-bold text-primary pt-2 leading-[2.0]">
+          ただ、迷いを抱えたまま進むよりも、<br />一度、扉の中を見てから決めるほうが、<br />ご自身の納得は、きっと深くなります。
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -338,43 +318,6 @@
       </div>
     </div>
 
-    <!-- 12-year map + role model -->
-    <div class="bg-surface-container-low p-8 md:p-14 rounded-xl mb-14">
-      <div class="mb-10">
-        <p class="font-cormorant italic text-secondary tracking-widest text-xs md:text-sm mb-2">The 12-Year Map</p>
-        <h3 class="text-2xl md:text-3xl font-bold text-primary">12年の地図と、上級生ロールモデル。</h3>
-        <p class="text-on-surface/70 text-sm mt-3">本校は4年ごとに3つのステージを歩む「12年の地図」を持っています。</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-4 mb-10">
-        <div class="bg-surface p-6 border-t-[3px] border-primary">
-          <p class="text-[10px] text-secondary font-bold font-cormorant tracking-widest mb-2">STAGE I — FOUNDATION</p>
-          <p class="font-bold text-primary mb-2">1〜4年生</p>
-          <p class="text-[13px] text-on-surface/70 leading-[1.9]">基礎学力と生活の土台を築きながら、上級生の背中を見て過ごす4年間。</p>
-        </div>
-        <div class="bg-surface p-6 border-t-[3px] border-primary/70">
-          <p class="text-[10px] text-secondary font-bold font-cormorant tracking-widest mb-2">STAGE II — EXPANDING</p>
-          <p class="font-bold text-primary mb-2">5年生〜中学2年生</p>
-          <p class="text-[13px] text-on-surface/70 leading-[1.9]">主体的に学び、自己の役割を探求しはじめる。思春期の伸びどきに、身近な先輩が指針となる。</p>
-        </div>
-        <div class="bg-surface p-6 border-t-[3px] border-primary/40">
-          <p class="text-[10px] text-secondary font-bold font-cormorant tracking-widest mb-2">STAGE III — SPECIALIZING</p>
-          <p class="font-bold text-primary mb-2">中学3年〜高校3年生</p>
-          <p class="text-[13px] text-on-surface/70 leading-[1.9]">将来の学力、愛に根差した生き方。下級生のロールモデルとして歩む4年間。</p>
-        </div>
-      </div>
-
-      <div class="max-w-2xl mx-auto space-y-5 text-on-surface/80 leading-[2.0] text-[15px]">
-        <p>この仕組みのなかで、高学年やお姉さんたちが、いつも自然に、お子さまの身近にいます。</p>
-        <ul class="space-y-2 pl-1">
-          <li class="flex gap-3"><span class="text-secondary">◆</span><span>合唱で響きを重ねる声</span></li>
-          <li class="flex gap-3"><span class="text-secondary">◆</span><span>図書館で静かに本を読む背中</span></li>
-          <li class="flex gap-3"><span class="text-secondary">◆</span><span>朝の教室で祈りを捧げる姿</span></li>
-        </ul>
-        <p class="text-lg font-bold text-primary pt-2">お子さまは、自分の"4年後"を、毎日見ることができます。</p>
-        <p>「こんな人になりたい」という静かな憧れが、12年の中で、ゆっくりと、確かに育っていきます。</p>
-      </div>
-    </div>
-
     <!-- 12年の、その先へ -->
     <div class="max-w-3xl mx-auto space-y-6 text-on-surface/80 leading-[2.0] text-[15px] md:text-base">
       <div class="space-y-2 mb-6">
@@ -397,58 +340,64 @@
       <p class="font-cormorant italic text-secondary tracking-widest text-xs md:text-sm">Come As You Are</p>
       <h2 class="text-2xl md:text-4xl font-bold text-primary leading-[1.5]">よくいただく、ご不安へのお答え。</h2>
     </div>
-    <div class="space-y-4">
+    <p class="text-center text-on-surface/60 text-[13px] mb-6">気になる見出しをタップすると、お答えが開きます。</p>
+    <div class="space-y-3">
       <!-- Q1 -->
-      <div class="bg-surface p-7 rounded-lg shadow-sm border border-outline-variant/10">
-        <h4 class="font-bold text-primary flex items-start gap-3 text-base md:text-lg leading-relaxed">
+      <details class="group bg-surface rounded-lg shadow-sm border border-outline-variant/10">
+        <summary class="flex items-center gap-3 cursor-pointer p-6 font-bold text-primary text-base md:text-lg leading-relaxed">
           <span class="text-secondary font-cormorant text-xl flex-shrink-0">Q.</span>
-          キリスト教の信者でないのですが、大丈夫でしょうか？
-        </h4>
-        <div class="mt-4 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] pl-8 space-y-3">
+          <span class="flex-grow">キリスト教の信者でないのですが、大丈夫でしょうか？</span>
+          <span class="material-symbols-outlined text-secondary flex-shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] space-y-3 border-t border-outline-variant/15 pt-4">
           <p>本校の宗教教育は、<strong class="text-primary">人間の土台としての宗教教育</strong>です。</p>
           <p>お祈りや神様のことを勉強しますが、学問的なことよりも<strong class="text-primary">「自分は愛されている」という自尊心を育てたり、自然を愛することを実感したり</strong>することを大切にしています。</p>
           <p><strong class="text-primary">キリスト教信者にならなければならない、ということもありません。</strong>信者でないご家庭の方が、ほとんどです。</p>
         </div>
-      </div>
+      </details>
       <!-- Q2 -->
-      <div class="bg-surface p-7 rounded-lg shadow-sm border border-outline-variant/10">
-        <h4 class="font-bold text-primary flex items-start gap-3 text-base md:text-lg leading-relaxed">
+      <details class="group bg-surface rounded-lg shadow-sm border border-outline-variant/10">
+        <summary class="flex items-center gap-3 cursor-pointer p-6 font-bold text-primary text-base md:text-lg leading-relaxed">
           <span class="text-secondary font-cormorant text-xl flex-shrink-0">Q.</span>
-          年長の今から動き始めて、間に合いますか？
-        </h4>
-        <div class="mt-4 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] pl-8 space-y-3">
+          <span class="flex-grow">年長の今から動き始めて、間に合いますか？</span>
+          <span class="material-symbols-outlined text-secondary flex-shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] space-y-3 border-t border-outline-variant/15 pt-4">
           <p>小1入試は、<strong class="text-primary">A日程（9月）・B日程（10月）・C日程（11月）</strong>の3回実施されます。年長の春に動き出される方は、多くいらっしゃいます。</p>
           <p>まずは学校の空気に触れてみてください。6月20日（土）には<strong class="text-primary">入試説明会・入試体験・願書記入</strong>があり、昨年度の実際の問題を見ながら本校教員が口頭で出題する時間をご用意しています。</p>
         </div>
-      </div>
+      </details>
       <!-- Q3 -->
-      <div class="bg-surface p-7 rounded-lg shadow-sm border border-outline-variant/10">
-        <h4 class="font-bold text-primary flex items-start gap-3 text-base md:text-lg leading-relaxed">
+      <details class="group bg-surface rounded-lg shadow-sm border border-outline-variant/10">
+        <summary class="flex items-center gap-3 cursor-pointer p-6 font-bold text-primary text-base md:text-lg leading-relaxed">
           <span class="text-secondary font-cormorant text-xl flex-shrink-0">Q.</span>
-          夫婦でうかがえるでしょうか？
-        </h4>
-        <div class="mt-4 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] pl-8 space-y-3">
+          <span class="flex-grow">夫婦でうかがえるでしょうか？</span>
+          <span class="material-symbols-outlined text-secondary flex-shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] space-y-3 border-t border-outline-variant/15 pt-4">
           <p><strong class="text-primary">ぜひ、ご夫婦でお越しください。</strong>本校では、親子面接もご両親でのご参加をお願いしています。</p>
           <p>説明会も、ご夫婦で景色を共有していただく60分にしています。</p>
         </div>
-      </div>
+      </details>
       <!-- Q4 -->
-      <div class="bg-surface p-7 rounded-lg shadow-sm border border-outline-variant/10">
-        <h4 class="font-bold text-primary flex items-start gap-3 text-base md:text-lg leading-relaxed">
+      <details class="group bg-surface rounded-lg shadow-sm border border-outline-variant/10">
+        <summary class="flex items-center gap-3 cursor-pointer p-6 font-bold text-primary text-base md:text-lg leading-relaxed">
           <span class="text-secondary font-cormorant text-xl flex-shrink-0">Q.</span>
-          下の子がまだ小さくて……
-        </h4>
-        <div class="mt-4 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] pl-8 space-y-3">
+          <span class="flex-grow">下の子がまだ小さくて……</span>
+          <span class="material-symbols-outlined text-secondary flex-shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] space-y-3 border-t border-outline-variant/15 pt-4">
           <p><strong class="text-primary">同伴していただけます。</strong>お気兼ねなく、ご家族でいらしてください。</p>
         </div>
-      </div>
+      </details>
       <!-- Q5 -->
-      <div class="bg-surface p-7 rounded-lg shadow-sm border border-outline-variant/10">
-        <h4 class="font-bold text-primary flex items-start gap-3 text-base md:text-lg leading-relaxed">
+      <details class="group bg-surface rounded-lg shadow-sm border border-outline-variant/10">
+        <summary class="flex items-center gap-3 cursor-pointer p-6 font-bold text-primary text-base md:text-lg leading-relaxed">
           <span class="text-secondary font-cormorant text-xl flex-shrink-0">Q.</span>
-          通学は大丈夫でしょうか？
-        </h4>
-        <div class="mt-4 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] pl-8 space-y-3">
+          <span class="flex-grow">通学は大丈夫でしょうか？</span>
+          <span class="material-symbols-outlined text-secondary flex-shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] space-y-3 border-t border-outline-variant/15 pt-4">
           <p>本校は阪急今津線「<strong class="text-primary">小林（おばやし）駅</strong>」から<strong class="text-primary">徒歩7分</strong>です。</p>
           <ul class="space-y-1 pl-1">
             <li class="flex gap-3"><span class="text-secondary">◆</span>大阪梅田駅から小林駅まで 26分</li>
@@ -458,64 +407,32 @@
           <p>通学の所要時間は<strong class="text-primary">1時間30分まで</strong>とさせていただいています。1年生入学直後は送迎から始まり、やがて地区ごとの集団下校へと、子どもたちは自然に自立していきます。</p>
           <p><strong class="text-primary">下校時は半年間、教員が小林駅まで送り届けます。</strong>通学路や電車では、併設の中高生も見守ってくれます。</p>
         </div>
-      </div>
+      </details>
       <!-- Q6 -->
-      <div class="bg-surface p-7 rounded-lg shadow-sm border border-outline-variant/10">
-        <h4 class="font-bold text-primary flex items-start gap-3 text-base md:text-lg leading-relaxed">
+      <details class="group bg-surface rounded-lg shadow-sm border border-outline-variant/10">
+        <summary class="flex items-center gap-3 cursor-pointer p-6 font-bold text-primary text-base md:text-lg leading-relaxed">
           <span class="text-secondary font-cormorant text-xl flex-shrink-0">Q.</span>
-          共働きなのですが、放課後は？
-        </h4>
-        <div class="mt-4 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] pl-8 space-y-3">
+          <span class="flex-grow">共働きなのですが、放課後は？</span>
+          <span class="material-symbols-outlined text-secondary flex-shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] space-y-3 border-t border-outline-variant/15 pt-4">
           <p><strong class="text-primary">放課後児童クラブ「マイヤークラブ」</strong>があります。</p>
           <p>自然豊かな学院敷地内の「ロザリオヒル教育施設」で、宿題・おやつの後、異学年の友達と<strong class="text-primary">19時まで</strong>過ごせます。</p>
         </div>
-      </div>
+      </details>
       <!-- Q7 -->
-      <div class="bg-surface p-7 rounded-lg shadow-sm border border-outline-variant/10">
-        <h4 class="font-bold text-primary flex items-start gap-3 text-base md:text-lg leading-relaxed">
+      <details class="group bg-surface rounded-lg shadow-sm border border-outline-variant/10">
+        <summary class="flex items-center gap-3 cursor-pointer p-6 font-bold text-primary text-base md:text-lg leading-relaxed">
           <span class="text-secondary font-cormorant text-xl flex-shrink-0">Q.</span>
-          どんな雰囲気の説明会ですか？
-        </h4>
-        <div class="mt-4 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] pl-8 space-y-3">
+          <span class="flex-grow">どんな雰囲気の説明会ですか？</span>
+          <span class="material-symbols-outlined text-secondary flex-shrink-0 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-[14px] md:text-[15px] text-on-surface/75 leading-[2.0] space-y-3 border-t border-outline-variant/15 pt-4">
           <p>この説明会は、<strong class="text-primary">"問える場"</strong>です。</p>
           <p>60分の中心は、<strong class="text-primary">卒業生・在校生保護者・高校生</strong>が語る時間。学校が一方的に話すのではなく、12年を経験された方の言葉から、ご自身で受け取っていただく場です。</p>
         </div>
-      </div>
+      </details>
     </div>
-  </div>
-</section>
-
-<!-- STEP 7.5: More Than One Day (mobile collapsible) -->
-<section class="py-20 md:py-28">
-  <div class="max-w-4xl mx-auto px-6">
-    <div class="mb-8 space-y-3">
-      <p class="font-cormorant italic text-secondary tracking-widest text-xs md:text-sm">More Than One Day</p>
-      <h2 class="text-2xl md:text-3xl font-bold text-primary leading-[1.5]">もし、もう少し深く知りたくなったら。</h2>
-    </div>
-    <p class="text-on-surface/80 leading-[2.0] text-[15px] md:text-base mb-6">
-      4月29日で、すべてが決まる必要はありません。<br />
-      本校では、<strong class="text-primary">年間を通じて来校の機会</strong>をご用意しています。
-    </p>
-    <details class="group" open>
-      <summary class="md:hidden flex justify-between items-center cursor-pointer text-secondary font-bold border-t border-outline-variant/30 pt-5 mb-5">
-        <span>行事一覧を見る</span>
-        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-      </summary>
-      <ul class="space-y-3 text-on-surface/80 leading-[1.9] text-[14px] md:text-[15px] mb-8">
-        <li class="flex gap-4 border-b border-hairline pb-3"><span class="text-secondary font-cormorant tracking-widest text-xs w-28 flex-shrink-0 pt-1">5月3日（日）</span><span>学院祭 Come and See Day</span></li>
-        <li class="flex gap-4 border-b border-hairline pb-3"><span class="text-secondary font-cormorant tracking-widest text-xs w-28 flex-shrink-0 pt-1">6月・11月</span><span>授業見学ツアー（6月は1日〜30日の平日、1対1で教員がご案内）</span></li>
-        <li class="flex gap-4 border-b border-hairline pb-3"><span class="text-secondary font-cormorant tracking-widest text-xs w-28 flex-shrink-0 pt-1">6月13日（土）</span><span>Stage Ⅰ 運動会</span></li>
-        <li class="flex gap-4 border-b border-hairline pb-3"><span class="text-secondary font-cormorant tracking-widest text-xs w-28 flex-shrink-0 pt-1">6月20日（土）</span><span>入試説明会・入試体験</span></li>
-        <li class="flex gap-4 border-b border-hairline pb-3"><span class="text-secondary font-cormorant tracking-widest text-xs w-28 flex-shrink-0 pt-1">10月24日（土）</span><span>Stage Ⅱ 体育祭</span></li>
-        <li class="flex gap-4 border-b border-hairline pb-3"><span class="text-secondary font-cormorant tracking-widest text-xs w-28 flex-shrink-0 pt-1">11月</span><span>学校説明会</span></li>
-        <li class="flex gap-4 border-b border-hairline pb-3"><span class="text-secondary font-cormorant tracking-widest text-xs w-28 flex-shrink-0 pt-1">7月・12月</span><span>個別相談会（夏季・冬季）</span></li>
-        <li class="flex gap-4 pb-1"><span class="text-secondary font-cormorant tracking-widest text-xs w-28 flex-shrink-0 pt-1">12月19日（土）</span><span>クリスマスキャロル、クリスマスバザー</span></li>
-      </ul>
-      <div class="space-y-4 text-on-surface/80 leading-[2.0] text-[15px] md:text-base">
-        <p>Webサイトやパンフレットだけではわからない、<br /><strong class="text-primary">緑豊かなみこころ坂</strong>（小林駅から学校までの通学路）、自然に囲まれた校舎、<strong class="text-primary">ロザリオヒル教育施設</strong>——来て、見て、感じていただきたい場所が、この学校にはたくさんあります。</p>
-        <p class="text-lg font-bold text-primary pt-2">4月29日は、その入口です。</p>
-      </div>
-    </details>
   </div>
 </section>
 
@@ -524,7 +441,7 @@
   <div class="max-w-4xl mx-auto px-6">
     <div class="text-center mb-14 space-y-3">
       <p class="font-cormorant italic text-secondary tracking-widest text-xs md:text-sm">Your 60 Minutes, In Detail</p>
-      <h2 class="text-2xl md:text-4xl font-bold text-primary leading-[1.5]">当日の流れを、正直にお伝えします。</h2>
+      <h2 class="text-2xl md:text-4xl font-bold text-primary leading-[1.5]">当日の流れを、お伝えします。</h2>
       <p class="text-on-surface/70 text-[14px] md:text-[15px] leading-[2.0] max-w-2xl mx-auto pt-3">どんな60分になるかを、最初からお見せします。</p>
     </div>
     <div class="relative space-y-5 before:absolute before:left-[17px] before:top-4 before:bottom-4 before:w-px before:bg-outline-variant">
@@ -541,7 +458,7 @@
         <div class="bg-surface p-5 rounded-lg flex-grow shadow-sm">
           <span class="text-secondary font-cormorant font-bold text-sm">10:00 —</span>
           <h4 class="font-bold text-primary mt-1">ウェルカム英語スピーチ</h4>
-          <p class="text-[13px] md:text-[14px] text-on-surface/65 mt-2 leading-[1.9]">2年生・6年生・12年生が、英語で語ります。</p>
+          <p class="text-[13px] md:text-[14px] text-on-surface/65 mt-2 leading-[1.9]">2年生・6年生・12年生（高校3年生）が、英語で語ります。</p>
         </div>
       </div>
       <div class="relative flex gap-6">
@@ -667,20 +584,76 @@
   </div>
 </section>
 
-<!-- STEP 9: Teachers' Quiet Message -->
-<section class="py-20 md:py-28 bg-primary text-on-primary">
-  <div class="max-w-3xl mx-auto px-6">
-    <div class="text-center mb-10 space-y-3">
-      <p class="font-cormorant italic text-secondary-fixed-dim tracking-widest text-xs md:text-sm">A Quiet Message from Our Teachers</p>
-      <h2 class="text-2xl md:text-4xl font-bold leading-[1.5]">正直に、申し上げます。</h2>
+<!-- STEP 8.5: Parent Voices -->
+<section class="py-20 md:py-28 bg-surface">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-14 space-y-3">
+      <p class="font-cormorant italic text-secondary tracking-widest text-xs md:text-sm">Voices — 12 Years Later</p>
+      <h2 class="text-2xl md:text-4xl font-bold text-primary leading-[1.5]">12年を終えた、ご家庭から。</h2>
+      <p class="text-on-surface/65 text-[13px] md:text-sm pt-2">※ 12年生（高校3年生）の保護者の方々に、振り返りを寄せていただいた手記より。</p>
     </div>
-    <div class="space-y-6 text-on-primary/85 leading-[2.1] text-[15px] md:text-base">
-      <p>この学校は、派手な学校ではありません。<br />テレビに出る有名人を出してきた学校でもありません。</p>
-      <p>ただ、<strong class="text-on-primary">100年前からここにある場所で、今日もお子さまたちと、祈り、学び、歌い、ふりかえっています。</strong></p>
-      <p>卒業生の多くは、<br />「あの学校でよかった」と、何十年もたってから、<br />静かに言ってくれます。</p>
-      <p>派手な言葉で売り込むことは、できません。<br />けれど、<strong class="text-on-primary">この12年の中で起きていることは、本物だ</strong>という<br />静かな自信だけは、持っています。</p>
-      <p>4月29日、<br />その空気の一端を、お伝えできればと思っています。</p>
-      <p class="italic text-secondary-fixed-dim font-cormorant pt-4 text-right">—— 小林聖心女子学院 教員一同</p>
+
+    <div class="space-y-10">
+      <!-- Voice 1 -->
+      <figure class="bg-surface-container-low p-8 md:p-12 rounded-lg border-l-[3px] border-secondary/70">
+        <div class="flex items-start gap-4 mb-6">
+          <span class="material-symbols-outlined text-secondary/30 text-4xl" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+          <p class="text-primary font-bold text-lg md:text-xl leading-[1.9]">
+            娘が何度も伝えてくれました。<br />
+            「自分の学校は、小林聖心以外に考えられない」と。
+          </p>
+        </div>
+        <blockquote class="text-on-surface/80 leading-[2.0] text-[14px] md:text-[15px] space-y-4 pl-2">
+          <p>小学校受験の時、娘はあまりにも幼く無邪気で、受験させること自体に不安と葛藤がありました。<br />娘にとって本当に良かったのかと、不安がよぎることもありました。</p>
+          <p>けれど、いざ入学すると、先生方のきめ細やかなお心遣い、お優しい対応に、日に日に不安がなくなり、本当にお世話になることができてよかったという気持ちが強くなりました。</p>
+          <p>それは、小中高と学年が上がっていくごとに強い確信となり、娘も<strong class="text-primary">「自分の学校は小林聖心以外に考えられない」</strong>と、私たちの選択に感謝を伝えてくれる機会が何度もありました。</p>
+          <p>娘に、その12年間に小林聖心の学校生活をプレゼントできたことを、<br />親として、大変うれしく思っております。</p>
+        </blockquote>
+        <figcaption class="mt-6 text-right text-on-surface/55 text-[13px] font-cormorant italic tracking-wide">— 12年生保護者A</figcaption>
+      </figure>
+
+      <!-- Voice 2 -->
+      <figure class="bg-surface-container-low p-8 md:p-12 rounded-lg border-l-[3px] border-secondary/70">
+        <div class="flex items-start gap-4 mb-6">
+          <span class="material-symbols-outlined text-secondary/30 text-4xl" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+          <p class="text-primary font-bold text-lg md:text-xl leading-[1.9]">
+            聖心坂で見つけた落ち葉を、<br />
+            「ママにお土産だよ」と、ポケットから。
+          </p>
+        </div>
+        <blockquote class="text-on-surface/80 leading-[2.0] text-[14px] md:text-[15px] space-y-4 pl-2">
+          <p>阪急小林駅の改札を出て、石畳の小道を進み、聖心（みこころ）坂を登っていくと、歴史の重みを感じる校舎と、その手前にずっと続く美しい青々とした竹林が私達を迎えてくれました。</p>
+          <p>正直、まだ幼い娘に重たいランドセルを背負わせ、電車登校させることには心労も伴いました。<br />けれど、毎日笑顔いっぱいで「楽しかったよ」と帰ってきてくれて、<br />時には<strong class="text-primary">聖心坂で見つけた美しい色の落ち葉を制服のポケットに詰めて、「ママにお土産だよ」</strong>と持って帰ってきてくれたこともありました。</p>
+          <p>12年間で娘たちは、皆姉妹のように何でも話せ、助け合いながら絆を深めてこられたのだと思います。</p>
+          <p>小林聖心が大切にしている <span class="font-cormorant italic text-primary">"Big You, small i"</span> は、私も大好きな言葉です。<br />親子共に、多くの学びのある実り多い12年間でした。</p>
+        </blockquote>
+        <figcaption class="mt-6 text-right text-on-surface/55 text-[13px] font-cormorant italic tracking-wide">— 12年生保護者B</figcaption>
+      </figure>
+    </div>
+
+    <p class="text-center text-on-surface/60 text-[13px] mt-10 leading-[1.9]">
+      4月29日には、こうして12年を歩まれたご家庭の「いまの声」を、<br class="hidden md:block" />
+      在校生保護者・卒業生のかたちで、直接お届けします。
+    </p>
+  </div>
+</section>
+
+<!-- STEP 9.5: Not-for-you Screening -->
+<section class="py-16 md:py-20 bg-surface-container-low">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="mb-8 space-y-2">
+      <p class="font-cormorant italic text-secondary tracking-widest text-xs md:text-sm">Before You Come</p>
+      <h3 class="text-xl md:text-2xl font-bold text-primary leading-[1.5]">この60分が、向かないかもしれない方へ。</h3>
+    </div>
+    <div class="space-y-4 text-on-surface/75 leading-[2.0] text-[14px] md:text-[15px]">
+      <p>率直に申し上げますと、この説明会は、こんな方にはお時間の無駄になるかもしれません。</p>
+      <ul class="space-y-3 pl-1">
+        <li class="flex gap-3"><span class="text-secondary flex-shrink-0">◇</span><span>偏差値・合格実績の数字だけで、学校を比較したい方</span></li>
+        <li class="flex gap-3"><span class="text-secondary flex-shrink-0">◇</span><span>「祈りの時間」のような、静かな時間に価値を感じられない方</span></li>
+        <li class="flex gap-3"><span class="text-secondary flex-shrink-0">◇</span><span>できるだけ早く、どこかの合格を確定させたい方</span></li>
+      </ul>
+      <p class="pt-3">本校の60分は、数字ではなく、<strong class="text-primary">12年という"ひとつづきの時間"の手触り</strong>をお伝えする場です。</p>
+      <p>もし、上のどれか一つでも<strong class="text-primary">「むしろ、そこを見に行きたい」</strong>と感じてくださるなら——<br />この先の"お申込"を、どうぞ。</p>
     </div>
   </div>
 </section>
@@ -703,6 +676,7 @@
       </ul>
       <p class="text-lg font-bold text-primary pt-4">ただ、扉の中を、見にきてください。</p>
       <p class="italic text-right pr-2">選ぶのは、あなたです。</p>
+      <p class="text-on-surface/60 text-[13px] text-center pt-3">——一歩踏み出される方から、静かに席が埋まっていきます。</p>
     </div>
     <div class="text-center">
       <a href="https://mirai-compass.net/usr/obyshjge/event/evtIndex.jsf" target="_blank" rel="noopener"
@@ -715,6 +689,24 @@
         <p>申込締切：4月28日（火）23:59</p>
         <p>お申込は外部の申込システム（ミライコンパス）に移動します</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEP 9 (moved): Teachers' Quiet Message -->
+<section class="py-20 md:py-28 bg-primary text-on-primary">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-10 space-y-3">
+      <p class="font-cormorant italic text-secondary-fixed-dim tracking-widest text-xs md:text-sm">A Quiet Message from Our Teachers</p>
+      <h2 class="text-2xl md:text-4xl font-bold leading-[1.5]">正直に、申し上げます。</h2>
+    </div>
+    <div class="space-y-6 text-on-primary/85 leading-[2.1] text-[15px] md:text-base">
+      <p>この学校は、派手な学校ではありません。<br />テレビに出る有名人を出してきた学校でもありません。</p>
+      <p>ただ、<strong class="text-on-primary">100年前からここにある場所で、今日もお子さまたちと、祈り、学び、歌い、ふりかえっています。</strong></p>
+      <p>卒業生の多くは、<br />「あの学校でよかった」と、何十年もたってから、<br />静かに言ってくれます。</p>
+      <p>派手な言葉で売り込むことは、できません。<br />けれど、<strong class="text-on-primary">この12年の中で起きていることは、本物だ</strong>という<br />静かな自信だけは、持っています。</p>
+      <p>4月29日、<br />その空気の一端を、お伝えできればと思っています。</p>
+      <p class="italic text-secondary-fixed-dim font-cormorant pt-4 text-right">—— 小林聖心女子学院 教員一同</p>
     </div>
   </div>
 </section>
@@ -737,7 +729,8 @@
           <p class="flex items-start gap-3">
             <span class="material-symbols-outlined text-secondary mt-0.5">train</span>
             <span>阪急今津線「小林（おばやし）」駅下車 <strong class="text-primary">徒歩7分</strong><br />
-              <span class="text-sm opacity-75">大阪梅田駅から26分／神戸三宮駅から25分／宝塚駅から6分</span>
+              <span class="text-sm opacity-75">大阪梅田駅から26分／神戸三宮駅から25分／宝塚駅から6分</span><br />
+              <span class="text-sm opacity-75">宝塚・西宮・伊丹・芦屋・大阪北摂から、阪急今津線で通われています。</span>
             </span>
           </p>
           <p class="flex items-start gap-3">
