@@ -82,18 +82,23 @@
 <body class="bg-background text-on-surface selection:bg-secondary-container">
 
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md transition-all duration-300">
-  <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-    <div class="text-base md:text-lg font-bold text-primary flex flex-col leading-tight">
-      <span class="text-[10px] md:text-xs font-cormorant tracking-widest text-secondary">SACRED HEART</span>
-      小林聖心女子学院小学校
+<header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md transition-all duration-300 border-b border-hairline/60">
+  <div class="flex justify-between items-center gap-3 px-4 md:px-6 py-3 md:py-4 max-w-7xl mx-auto">
+    <div class="text-sm md:text-lg font-bold text-primary flex flex-col leading-tight flex-shrink min-w-0">
+      <span class="text-[9px] md:text-xs font-cormorant tracking-widest text-secondary">SACRED HEART</span>
+      <span class="truncate">小林聖心女子学院小学校</span>
     </div>
-    <nav class="hidden md:flex gap-8 items-center">
-      <a class="text-on-surface/70 hover:text-secondary transition-colors duration-300 font-medium text-sm" href="#pillars">教育方針</a>
-      <a class="text-on-surface/70 hover:text-secondary transition-colors duration-300 font-medium text-sm" href="#program">当日プログラム</a>
-      <a class="text-on-surface/70 hover:text-secondary transition-colors duration-300 font-medium text-sm" href="#access">アクセス</a>
-      <span class="text-secondary font-cormorant tracking-widest text-xs border-l border-outline-variant pl-6">SINCE 1923</span>
-    </nav>
+    <div class="flex items-center gap-5 md:gap-8">
+      <nav class="hidden md:flex gap-8 items-center">
+        <a class="text-on-surface/70 hover:text-secondary transition-colors duration-300 font-medium text-sm" href="#pillars">教育方針</a>
+        <a class="text-on-surface/70 hover:text-secondary transition-colors duration-300 font-medium text-sm" href="#program">当日プログラム</a>
+        <a class="text-on-surface/70 hover:text-secondary transition-colors duration-300 font-medium text-sm" href="#access">アクセス</a>
+      </nav>
+      <div class="flex flex-col leading-tight text-right border-l border-outline-variant pl-3 md:pl-5 flex-shrink-0">
+        <span class="text-[9px] md:text-[10px] font-cormorant tracking-[0.18em] text-secondary uppercase">Apr 29 · Wed</span>
+        <span class="text-[11px] md:text-sm font-bold text-primary">学校説明会 10:00</span>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -121,7 +126,7 @@
       </p>
       <p class="text-on-surface/75 leading-relaxed max-w-xl">
         ですから、小学校を選ぶのではなく、12年を選ぶ。<br />
-        その入口を、4月29日にご覧ください。
+        その入口を、4月29日の学校説明会でご覧ください。
       </p>
     </div>
   </div>
@@ -259,12 +264,20 @@
 <!-- STEP 6: Where 12 Years Begins -->
 <section id="pillars" class="py-20 md:py-28 scroll-mt-20">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-14 space-y-3">
+    <div class="text-center mb-10 space-y-3">
       <p class="font-cormorant italic text-secondary tracking-widest text-xs md:text-sm">Where 12 Years Begins</p>
       <h2 class="text-2xl md:text-4xl font-bold text-primary leading-[1.5]">
         小林聖心は、12年を<br />「ひとつづきの時間」として<br />大切にしています。
       </h2>
     </div>
+
+    <!-- School building visual anchor -->
+    <figure class="max-w-4xl mx-auto mb-16">
+      <div class="aspect-[16/10] md:aspect-[21/9] overflow-hidden rounded-sm shadow-md">
+        <img src="./images/schoolhouse.jpg" alt="小林聖心女子学院 校舎" loading="lazy" class="w-full h-full object-cover" />
+      </div>
+      <figcaption class="mt-3 text-center text-[11px] md:text-xs text-on-surface/55 font-cormorant italic tracking-widest">Since 1923 — The place where 12 years begin</figcaption>
+    </figure>
 
     <!-- Official body copy quote -->
     <div class="mb-20 relative p-10 md:p-16 bg-surface max-w-4xl mx-auto border-l-[3px] border-secondary/70">
@@ -617,16 +630,31 @@
         <div class="flex items-start gap-4 mb-6">
           <span class="material-symbols-outlined text-secondary/30 text-4xl" style="font-variation-settings: 'FILL' 1;">format_quote</span>
           <p class="text-primary font-bold text-lg md:text-xl leading-[1.9]">
-            聖心坂で見つけた落ち葉を、<br />
+            みこころ坂で見つけた落ち葉を、<br />
             「ママにお土産だよ」と、ポケットから。
           </p>
         </div>
         <blockquote class="text-on-surface/80 leading-[2.0] text-[14px] md:text-[15px] space-y-4 pl-2">
-          <p>阪急小林駅の改札を出て、石畳の小道を進み、聖心（みこころ）坂を登っていくと、歴史の重みを感じる校舎と、その手前にずっと続く美しい青々とした竹林が私達を迎えてくれました。</p>
-          <p>正直、まだ幼い娘に重たいランドセルを背負わせ、電車登校させることには心労も伴いました。<br />けれど、毎日笑顔いっぱいで「楽しかったよ」と帰ってきてくれて、<br />時には<strong class="text-primary">聖心坂で見つけた美しい色の落ち葉を制服のポケットに詰めて、「ママにお土産だよ」</strong>と持って帰ってきてくれたこともありました。</p>
+          <p>阪急小林駅の改札を出て、石畳の小道を進み、みこころ坂を登っていくと、歴史の重みを感じる校舎と、その手前にずっと続く美しい青々とした竹林が私達を迎えてくれました。</p>
+          <p>正直、まだ幼い娘に重たいランドセルを背負わせ、電車登校させることには心労も伴いました。<br />けれど、毎日笑顔いっぱいで「楽しかったよ」と帰ってきてくれて、<br />時には<strong class="text-primary">みこころ坂で見つけた美しい色の落ち葉を制服のポケットに詰めて、「ママにお土産だよ」</strong>と持って帰ってきてくれたこともありました。</p>
           <p>12年間で娘たちは、皆姉妹のように何でも話せ、助け合いながら絆を深めてこられたのだと思います。</p>
           <p>小林聖心が大切にしている <span class="font-cormorant italic text-primary">"Big You, small i"</span> は、私も大好きな言葉です。<br />親子共に、多くの学びのある実り多い12年間でした。</p>
         </blockquote>
+        <!-- Photo pair: Mikokoro slope & bamboo grove -->
+        <div class="grid grid-cols-2 gap-3 md:gap-4 mt-8">
+          <figure class="space-y-2">
+            <div class="aspect-square overflow-hidden rounded-sm">
+              <img src="./images/mikokoro-slope.jpg" alt="みこころ坂の紅葉" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <figcaption class="text-[11px] md:text-xs text-on-surface/55 text-center font-cormorant italic tracking-wide">Mikokoro Slope — みこころ坂</figcaption>
+          </figure>
+          <figure class="space-y-2">
+            <div class="aspect-square overflow-hidden rounded-sm">
+              <img src="./images/bamboo.jpg" alt="校舎手前の青々とした竹林" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <figcaption class="text-[11px] md:text-xs text-on-surface/55 text-center font-cormorant italic tracking-wide">Bamboo Grove — 校舎前の竹林</figcaption>
+          </figure>
+        </div>
         <figcaption class="mt-6 text-right text-on-surface/55 text-[13px] font-cormorant italic tracking-wide">— 12年生保護者B</figcaption>
       </figure>
     </div>
@@ -661,6 +689,13 @@
 <!-- STEP 10: Final CTA -->
 <section class="py-24 md:py-32 bg-surface">
   <div class="max-w-3xl mx-auto px-6">
+    <!-- Front gate visual -->
+    <figure class="mb-10 max-w-sm mx-auto">
+      <div class="aspect-square overflow-hidden rounded-sm shadow-lg">
+        <img src="./images/gate.jpg" alt="小林聖心女子学院 正門" loading="lazy" class="w-full h-full object-cover" />
+      </div>
+      <figcaption class="mt-3 text-center text-[11px] md:text-xs text-on-surface/55 font-cormorant italic tracking-widest">The Front Gate — この扉の中で、お待ちしています</figcaption>
+    </figure>
     <div class="text-center space-y-3 mb-10">
       <p class="font-cormorant italic text-secondary tracking-widest text-xs md:text-sm">See You on April 29</p>
       <h2 class="text-3xl md:text-5xl font-black text-primary leading-[1.4]">4月29日、お待ちしています。</h2>
@@ -690,6 +725,25 @@
         <p>お申込は外部の申込システム（ミライコンパス）に移動します</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Soft CTA: Instagram for the still-undecided -->
+<section class="py-14 md:py-16 bg-surface-container-low border-t border-hairline/40">
+  <div class="max-w-2xl mx-auto px-6 text-center">
+    <p class="font-cormorant italic text-secondary tracking-widest text-[11px] md:text-xs mb-3">Still Thinking?</p>
+    <h3 class="text-lg md:text-xl font-bold text-primary leading-[1.6] mb-4">まだ迷っている方へ。</h3>
+    <p class="text-on-surface/75 text-[14px] md:text-[15px] leading-[1.95] mb-6">
+      申し込む前に、まずは学校の日常を<br class="md:hidden" />のぞいてみてください。<br />
+      子どもたちの声、季節の風景、祈りの時間——<br />
+      Instagramで、静かにお届けしています。
+    </p>
+    <a href="https://www.instagram.com/obayashiseishin_primaryschool" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-2 px-6 py-3 border border-outline/50 text-primary text-sm font-semibold hover:bg-primary hover:text-on-primary hover:border-primary transition-all rounded-full">
+      <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+      Instagramで学校の日常を見る
+    </a>
+    <p class="text-on-surface/50 text-[11px] mt-3">@obayashiseishin_primaryschool</p>
   </div>
 </section>
 
