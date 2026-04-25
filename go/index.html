@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>お申し込みページへ移動します…</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WG4L0SGNJJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WG4L0SGNJJ');
+  var params = new URLSearchParams(window.location.search);
+  var source = params.get('s') || 'direct';
+  gtag('event', 'click_apply', {
+    event_category: 'outbound',
+    event_label: 'mirai_compass',
+    source: source
+  });
+  setTimeout(function(){ window.location.href = 'https://mirai-compass.net/usr/obyshjge/event/evtIndex.jsf'; }, 800);
+</script>
+<style>
+  body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background: #f7f3ea; color: #2e4a3c; }
+</style>
+</head>
+<body>
+<p>お申し込みページへ移動します…</p>
+</body>
+</html>
